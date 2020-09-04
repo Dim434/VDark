@@ -11,5 +11,5 @@ import UIKit
 struct User {
     let nickName, firstname, lastName : String
     let avatar : UIImage
-    
+    let id : String
 }

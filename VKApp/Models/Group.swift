@@ -11,4 +11,5 @@ import UIKit
 struct Group{
     let name : String
     let image : UIImage
+    let id : String
 }
