@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -30,8 +31,9 @@ class LoginViewController: UIViewController {
     }
     @objc
     func keyboardWillShow(notification : Notification)  {
-        guard let keyboardHeight = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {return}
-
+        let kbFrameSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        // scrollView.contentOffset = CGPoint(x: 0, y: kbFrameSize.height)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: kbFrameSize.height+40, right: 0)
         
     }
     

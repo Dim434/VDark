@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10151A724FBA75D008B8FC1 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10151A624FBA75D008B8FC1 /* AvatarView.swift */; };
+		C10151A924FBA88E008B8FC1 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = C10151A824FBA88E008B8FC1 /* unnamed.png */; };
+		C10151AB24FBD660008B8FC1 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10151AA24FBD660008B8FC1 /* LikeControl.swift */; };
 		C17BBDF924E84CC700D65AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BBDF824E84CC700D65AB9 /* AppDelegate.swift */; };
 		C17BBDFB24E84CC700D65AB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BBDFA24E84CC700D65AB9 /* SceneDelegate.swift */; };
 		C17BBDFD24E84CC700D65AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BBDFC24E84CC700D65AB9 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C10151A624FBA75D008B8FC1 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		C10151A824FBA88E008B8FC1 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
+		C10151AA24FBD660008B8FC1 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		C17BBDF524E84CC700D65AB9 /* VDark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17BBDF824E84CC700D65AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17BBDFA24E84CC700D65AB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C10151A424FBA725008B8FC1 /* SwiftView */ = {
+			isa = PBXGroup;
+			children = (
+				C17BBDFC24E84CC700D65AB9 /* ViewController.swift */,
+				C1DFAF1624F3CCBE00BAAD05 /* FriendListViewController.swift */,
+				C1DFAF1B24F3D5ED00BAAD05 /* GroupViewController.swift */,
+			);
+			path = SwiftView;
+			sourceTree = "<group>";
+		};
+		C10151A524FBA74B008B8FC1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C10151A624FBA75D008B8FC1 /* AvatarView.swift */,
+				C10151AA24FBD660008B8FC1 /* LikeControl.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		C17BBDEC24E84CC700D65AB9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +89,16 @@
 		C17BBDF724E84CC700D65AB9 /* VKApp */ = {
 			isa = PBXGroup;
 			children = (
+				C10151A524FBA74B008B8FC1 /* CustomViews */,
+				C10151A424FBA725008B8FC1 /* SwiftView */,
 				C1DFAF1D24F3D87000BAAD05 /* Models */,
 				C17BBDF824E84CC700D65AB9 /* AppDelegate.swift */,
 				C17BBDFA24E84CC700D65AB9 /* SceneDelegate.swift */,
-				C17BBDFC24E84CC700D65AB9 /* ViewController.swift */,
-				C1DFAF1624F3CCBE00BAAD05 /* FriendListViewController.swift */,
-				C1DFAF1B24F3D5ED00BAAD05 /* GroupViewController.swift */,
 				C17BBDFE24E84CC700D65AB9 /* Main.storyboard */,
 				C17BBE0124E84CCA00D65AB9 /* Assets.xcassets */,
 				C17BBE0324E84CCA00D65AB9 /* LaunchScreen.storyboard */,
 				C17BBE0624E84CCA00D65AB9 /* Info.plist */,
+				C10151A824FBA88E008B8FC1 /* unnamed.png */,
 			);
 			path = VKApp;
 			sourceTree = "<group>";
@@ -147,6 +172,7 @@
 			files = (
 				C17BBE0524E84CCA00D65AB9 /* LaunchScreen.storyboard in Resources */,
 				C17BBE0224E84CCA00D65AB9 /* Assets.xcassets in Resources */,
+				C10151A924FBA88E008B8FC1 /* unnamed.png in Resources */,
 				C17BBE0024E84CC700D65AB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,7 +189,9 @@
 				C17BBDFD24E84CC700D65AB9 /* ViewController.swift in Sources */,
 				C1DFAF1F24F3D87A00BAAD05 /* User.swift in Sources */,
 				C17BBDF924E84CC700D65AB9 /* AppDelegate.swift in Sources */,
+				C10151A724FBA75D008B8FC1 /* AvatarView.swift in Sources */,
 				C17BBDFB24E84CC700D65AB9 /* SceneDelegate.swift in Sources */,
+				C10151AB24FBD660008B8FC1 /* LikeControl.swift in Sources */,
 				C1DFAF1C24F3D5ED00BAAD05 /* GroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
